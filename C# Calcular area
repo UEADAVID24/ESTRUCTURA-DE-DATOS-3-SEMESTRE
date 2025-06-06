@@ -1,0 +1,29 @@
+using System;
+
+// Clase Circulo que representa un círculo geométrico
+public class Circulo
+{
+    private double radio; // Atributo privado que almacena el valor del radio
+
+    // Constructor de la clase Circulo
+    public Circulo(double radio)
+    {
+        this.radio = radio;
+    }
+
+    // Método que calcula el área del círculo
+    // Devuelve un valor double
+    public double CalcularArea()
+    {
+        return Math.PI * radio * radio;
+    }
+
+    // Método que calcula el perímetro del círculo
+    // Devuelve un valor double
+    public double CalcularPerimetro()
+    {
+        return 2 * Math.PI * radio;
+    }
+}
+
+
