@@ -1,0 +1,27 @@
+using System;
+
+// Clase Rectangulo que representa un rectángulo geométrico
+public class Rectangulo
+{
+    private double baseRectangulo;  // Atributo privado para la base del rectángulo
+    private double altura;          // Atributo privado para la altura del rectángulo
+
+    // Constructor de la clase Rectangulo
+    public Rectangulo(double baseRectangulo, double altura)
+    {
+        this.baseRectangulo = baseRectangulo;
+        this.altura = altura;
+    }
+
+    // Método que calcula el área del rectángulo
+    public double CalcularArea()
+    {
+        return baseRectangulo * altura;
+    }
+
+    // Método que calcula el perímetro del rectángulo
+    public double CalcularPerimetro()
+    {
+        return 2 * (baseRectangulo + altura);
+    }
+}
